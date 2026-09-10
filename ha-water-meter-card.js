@@ -1,4 +1,4 @@
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 
 class HAWaterMeterCard extends HTMLElement {
   constructor() {
@@ -135,7 +135,7 @@ class HAWaterMeterCard extends HTMLElement {
     ].filter(Boolean);
 
     this.shadowRoot.innerHTML = `<style>
-      :host{display:block;--accent:var(--dashboard-accent,#2196f3);--good:var(--dashboard-success,#54d9aa);--warn:var(--dashboard-warning,#ffbd59);--danger:var(--dashboard-danger,#ff667a);--edge:var(--dashboard-border-neutral,rgba(127,145,165,.2))}
+      :host{display:block;--accent:var(--dashboard-accent, var(--primary-color, #2196f3));--good:var(--dashboard-success, var(--success-color, #54d9aa));--warn:var(--dashboard-warning, var(--warning-color, #ffbd59));--danger:var(--dashboard-danger, var(--error-color, #ff667a));--edge:var(--dashboard-border-neutral, var(--divider-color, rgba(127,145,165,.2)))}
       *{box-sizing:border-box}
       ha-card{position:relative;overflow:hidden;padding:18px;border-left:4px solid var(--accent);border-radius:20px;background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 7%,transparent),transparent 45%),var(--ha-card-background,var(--card-background-color));color:var(--primary-text-color);box-shadow:var(--ha-card-box-shadow)}
       .head{display:flex;align-items:center;justify-content:space-between;gap:14px}
