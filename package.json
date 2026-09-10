@@ -1,0 +1,1 @@
+{"name":"ha-water-meter-card","version":"0.1.0","description":"Home Assistant Lovelace custom card","license":"MIT","scripts":{"check":"node --check ha-water-meter-card.js"}}
